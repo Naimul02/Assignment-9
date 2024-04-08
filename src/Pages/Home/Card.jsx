@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const Card = ({ card }) => {
-  const { estate_title, description, price, status_area, image } = card;
+  const { estate_title, description, price, status_area, image, id } = card;
   return (
     <div className="card  border-2 rounded-xl p-3">
       <figure>
@@ -11,8 +12,12 @@ const Card = ({ card }) => {
         <p>{description.slice(0, 100)}...</p>
         <p className="text-xl font-semibold text-orange-600">Price : {price}</p>
         <p>{status_area}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <div className="card-actions">
+          <Link to={`/details/${id}`}>
+            <button className="btn bg-teal-950 text-white hover:bg-slate-900 rounded-xl w-full px-12  mt-3">
+              View Property
+            </button>
+          </Link>
         </div>
       </div>
     </div>
