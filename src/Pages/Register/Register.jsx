@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import app from "../../firebase/firebase.config";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const auth = getAuth(app);
 const Register = () => {
@@ -17,17 +19,30 @@ const Register = () => {
     const email = data.email;
     const password = data.password;
 
-    createUser(email, password).then((result) => {
-      updateProfile(auth.currentUser, {
-        displayName: name,
-        photoURL: photoURL,
+    if (password.length < 6) {
+      return toast.error("Password must be at least 6 Character or longer");
+    } else if (!/[A-Z]/.test(password)) {
+      return toast.error("Password must be at least one uppercase letter");
+    } else if (!/[a-z]/.test(password)) {
+      return toast.error("Password must be at least one lowercase letter");
+    }
+
+    createUser(email, password)
+      .then((result) => {
+        updateProfile(auth.currentUser, {
+          displayName: name,
+          photoURL: photoURL,
+        })
+          .then(() => {})
+          .catch((error) => {
+            console.error(error);
+          });
+        console.log(result.user);
+        toast.success("User created successfully!");
       })
-        .then(() => {})
-        .catch((error) => {
-          console.error(error);
-        });
-      console.log(result.user);
-    });
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
   return (
     <div className="flex items-center h-[329px]">
@@ -72,6 +87,7 @@ const Register = () => {
           </Link>
         </p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
   const { signInUser, signInWithGoogle, signInWithGithub } =
     useContext(AuthContext);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
@@ -19,6 +19,7 @@ const Login = () => {
     signInUser(email, password)
       .then((result) => {
         console.log(result.user);
+        toast.success("User login successful");
       })
       .catch((error) => {
         console.error(error.message);
@@ -31,6 +32,7 @@ const Login = () => {
     signInWithGoogle()
       .then((result) => {
         console.log(result.user);
+        toast.success("Login with Google successful");
       })
       .catch((error) => {
         console.error(error);
@@ -40,6 +42,7 @@ const Login = () => {
     signInWithGithub()
       .then((result) => {
         console.log(result.user);
+        toast.success("Login with Github successful");
       })
       .catch((error) => {
         console.error(error);

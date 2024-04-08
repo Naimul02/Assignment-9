@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "segment_name": "Hotel",
+    "estate_title": "Luxury Hotel Paradise",
+    "description": "Experience the ultimate luxury at our five-star hotel nestled in the heart of the city. Enjoy breathtaking views, exquisite dining, and impeccable service.",
+    "price": "$300 per night",
+    "status": "rent",
+    "area": "1000 sqft",
+    "location": "Downtown, CityName",
+    "image": "https://i.ibb.co/vzthbZr/nathan-cima-Gn-Pf-Ns-Fvps0-unsplash.jpg",
+    "facilities": ["Swimming pool", "Spa", "Fine dining restaurant", "Gym"]
+  },
+  {
+    "id": 2,
+    "segment_name": "Resort",
+    "estate_title": "Seaside Resort Retreat",
+    "description": "Escape to our tropical paradise resort where luxury meets tranquility. Indulge in spa treatments, water sports, and gourmet dining while surrounded by stunning ocean views.",
+    "price": "$500 per night",
+    "status": "rent",
+    "area": "1500 sqft",
+    "location": "Beachfront, IslandName",
+    "image": "https://i.ibb.co/g33WTt8/grant-durr-U1t34-Bukk6-U-unsplash.jpg",
+    "facilities": ["Private beach access", "Infinity pool", "Tennis courts", "Beachfront bar"]
+  },
+  {
+    "id": 3,
+    "segment_name": "Vacation Rental",
+    "estate_title": "Cozy Cabin Retreat",
+    "description": "Experience the serenity of nature in our charming cabin rental. Perfect for a romantic getaway or family vacation, this rustic retreat offers modern amenities amidst scenic surroundings.",
+    "price": "$200 per night",
+    "status": "rent",
+    "area": "800 sqft",
+    "location": "Wooded area, Countryside",
+    "image": "https://i.ibb.co/x6WS0k1/alisa-anton-u-z0-X-yr-JIE-unsplash.jpg",
+    "facilities": ["Fireplace", "Hot tub", "Outdoor seating area", "Hiking trails nearby"]
+  },
+  {
+    "id": 4,
+    "segment_name": "Hotel",
+    "estate_title": "Urban Boutique Hotel",
+    "description": "Discover the vibrant culture of the city at our boutique hotel. Stylishly designed rooms, personalized service, and a central location make it the perfect choice for business or leisure travelers.",
+    "price": "$250 per night",
+    "status": "rent",
+    "area": "700 sqft",
+    "location": "City Center, CityName",
+    "image": "https://i.ibb.co/JjZrCN8/thought-catalog-wy-Ein-DRV88-I-unsplash.jpg",
+    "facilities": ["Rooftop bar", "Fitness center", "Business center", "Complimentary breakfast"]
+  },
+  {
+    "id": 5,
+    "segment_name": "Motel",
+    "estate_title": "Classic Motel Oasis",
+    "description": "Experience the nostalgia of a classic roadside motel with modern comforts. Our convenient location and affordable rates make us the perfect choice for travelers seeking comfort and convenience.",
+    "price": "$100 per night",
+    "status": "rent",
+    "area": "500 sqft",
+    "location": "Highway, TownName",
+    "image": "https://i.ibb.co/C2G53nm/daniel-gregoire-s-Nj-W5fz7a-Fk-unsplash.jpg",
+    "facilities": ["Free parking", "Outdoor pool", "24-hour front desk", "Pet-friendly rooms"]
+  },
+  {
+    "id": 6,
+    "segment_name": "Lodge",
+    "estate_title": "Mountain Lodge Retreat",
+    "description": "Escape to the mountains and unwind in our cozy lodge retreat. Surrounded by pristine wilderness, our rustic lodge offers comfortable accommodations and outdoor adventures for nature enthusiasts.",
+    "price": "$300 per night",
+    "status": "rent",
+    "area": "1200 sqft",
+    "location": "Mountain Range, National Park",
+    "image": "https://i.ibb.co/q5t3THx/pietro-de-grandi-T7-K4a-EPo-GGk-unsplash.jpg",
+    "facilities": ["Fireplace", "Hiking trails", "Mountain views", "Restaurant onsite"]
+  },
+  {
+    "id": 7,
+    "segment_name": "Guest House",
+    "estate_title": "Charming Guest House Haven",
+    "description": "Experience the warmth of hospitality at our quaint guest house. With personalized service and home-like comforts, our charming accommodations provide a peaceful retreat for travelers.",
+    "price": "$150 per night",
+    "status": "rent",
+    "area": "600 sqft",
+    "location": "Suburban neighborhood, TownName",
+    "image": "https://i.ibb.co/1Ms0hvQ/calum-macaulay-4-WH7hy7-Gph-Q-unsplash.jpg",
+    "facilities": ["Garden patio", "Homemade breakfast", "WiFi", "Bicycle rental"]
+  },
+  {
+    "id": 8,
+    "segment_name": "Resort",
+    "estate_title": "Luxury Ski Resort Chalet",
+    "description": "Experience the ultimate ski vacation at our luxury resort chalet. Located slopeside, our upscale accommodations offer ski-in/ski-out access, gourmet dining, and luxurious amenities.",
+    "price": "$700 per night",
+    "status": "rent",
+    "area": "2000 sqft",
+    "location": "Mountain Resort, Ski Village",
+    "image": "https://i.ibb.co/StHrpfq/alexandre-chambon-aap-Semzfs-Ok-unsplash.jpg",
+    "facilities": ["Ski valet", "Hot tub", "Après-ski lounge", "Fitness center"]
+  },
+  {
+    "id": 9,
+    "segment_name": "Vacation Rental",
+    "estate_title": "Beachfront Villa Paradise",
+    "description": "Escape to our exclusive beachfront villa for the ultimate luxury vacation. With private beach access, infinity pool, and personalized service, this seaside retreat offers unparalleled relaxation.",
+    "price": "$1000 per night",
+    "status": "rent",
+    "area": "2500 sqft",
+    "location": "Oceanfront, Coastal Town",
+    "image": "https://i.ibb.co/0tNRDTg/suzy-brooks-n-YGy9p-B5-MP4-unsplash.jpg",
+    "facilities": ["Private beach", "Infinity pool", "Outdoor dining area", "Concierge service"]
+  }
+]
