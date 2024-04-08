@@ -1,9 +1,33 @@
+import { getAuth, updateProfile } from "firebase/auth";
+
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import app from "../../firebase/firebase.config";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+
+const auth = getAuth(app);
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
+
   const onSubmit = (data) => {
-    console.log(data);
+    const name = data.name;
+    const photoURL = data.photoURL;
+    const email = data.email;
+    const password = data.password;
+
+    createUser(email, password).then((result) => {
+      updateProfile(auth.currentUser, {
+        displayName: name,
+        photoURL: photoURL,
+      })
+        .then(() => {})
+        .catch((error) => {
+          console.error(error);
+        });
+      console.log(result.user);
+    });
   };
   return (
     <div className="flex items-center h-[329px]">
