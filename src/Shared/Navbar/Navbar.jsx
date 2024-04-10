@@ -1,11 +1,9 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import "./Navbar.css";
 const Navbar = () => {
   const { user, logOut, loading } = useContext(AuthContext);
-  console.log("navbar" , user)
-
-  
 
   const handleLogout = () => {
     logOut()
@@ -74,8 +72,8 @@ const Navbar = () => {
         )}
 
         {/* profile */}
-        <div>
-          <div className="dropdown dropdown-end">
+
+        {/* <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -93,8 +91,31 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+
+            <ul
+              tabIndex={0}
+              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <h2 className="text-2xl">hello bro</h2>
+            </ul>
+          </div> */}
+
+        {loading ? (
+          <span className="loading loading-spinner loading-lg"></span>
+        ) : (
+          <div className="w-12 h-12 rounded-full relative content-container">
+            <img
+              alt="user"
+              className="border rounded-full w-full h-full ml-4"
+              src={user && user.photoURL}
+            />
+            {user && (
+              <div className="absolute content rounded-xl bg-slate-200 px-6 py-2">
+                <h1 className="text-lg font-semibold">{user.displayName}</h1>
+              </div>
+            )}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

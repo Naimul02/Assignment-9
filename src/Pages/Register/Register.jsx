@@ -1,4 +1,5 @@
 import { getAuth, updateProfile } from "firebase/auth";
+import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -15,6 +16,8 @@ const Register = () => {
   const { createUser, logOut } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
   const [logout, setLogout] = useState(false);
+
+  const [passwordChecked, setPasswordChecked] = useState(false);
 
   const navigate = useNavigate();
   if (logout) {
@@ -86,13 +89,28 @@ const Register = () => {
             className="w-full border  px-3 py-2 rounded-lg"
             required
           />
-          <input
-            placeholder="Password"
-            type="password"
-            {...register("password")}
-            className="w-full border  px-3 py-2 rounded-lg"
-            required
-          />
+          <div className="flex items-center relative">
+            <input
+              placeholder="Password"
+              type={passwordChecked ? `text` : `password`}
+              {...register("password")}
+              className="w-full border  px-3 py-2 rounded-lg"
+              required
+            />
+
+            <span
+              className="absolute right-4"
+              onClick={() => {
+                setPasswordChecked(!passwordChecked);
+              }}
+            >
+              {passwordChecked ? (
+                <IoIosEyeOff className="text-2xl"></IoIosEyeOff>
+              ) : (
+                <IoIosEye className="text-2xl"></IoIosEye>
+              )}
+            </span>
+          </div>
 
           <input type="submit" className="btn btn-primary w-full" />
         </form>

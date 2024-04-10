@@ -1,0 +1,7 @@
+.content {
+  top: -300px;
+}
+.content-container:hover .content {
+  top: 55px;
+  left: -5px;
+}
