@@ -2,7 +2,10 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, loading } = useContext(AuthContext);
+  console.log("navbar" , user)
+
+  
 
   const handleLogout = () => {
     logOut()
@@ -78,31 +81,18 @@ const Navbar = () => {
               role="button"
               className="btn btn-ghost btn-circle avatar ml-3"
             >
-              <div className="w-16 rounded-full">
-                <img
-                  alt="user"
-                  className="border"
-                  src={user && user.photoURL}
-                />
-              </div>
+              {loading ? (
+                <span className="loading loading-spinner loading-lg"></span>
+              ) : (
+                <div className="w-16 rounded-full">
+                  <img
+                    alt="user"
+                    className="border"
+                    src={user && user.photoURL}
+                  />
+                </div>
+              )}
             </div>
-            {/* <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul> */}
           </div>
         </div>
       </div>

@@ -3,15 +3,28 @@ import { getAuth, updateProfile } from "firebase/auth";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import app from "../../firebase/firebase.config";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const auth = getAuth(app);
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, logOut } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
+  const [logout, setLogout] = useState(false);
+
+  const navigate = useNavigate();
+  if (logout) {
+    logOut()
+      .then(() => {
+        toast.success("User Created Successful");
+        return navigate("/login");
+      })
+      .catch(() => {});
+  }
 
   const onSubmit = (data) => {
     const name = data.name;
@@ -38,7 +51,7 @@ const Register = () => {
             console.error(error);
           });
         console.log(result.user);
-        toast.success("User created successfully!");
+        setLogout(true);
       })
       .catch((error) => {
         toast.error(error.message);
@@ -46,6 +59,9 @@ const Register = () => {
   };
   return (
     <div className="flex items-center h-[329px]">
+      <Helmet>
+        <title>EstateHospitalityHub | Register</title>
+      </Helmet>
       <div className="md:w-3/4 lg:w-1/2 mx-auto ">
         <h2 className="text-3xl font-semibold text-center mb-3">Register</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">

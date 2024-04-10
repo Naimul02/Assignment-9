@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { useParams } from "react-router-dom";
 const DetailsPage = () => {
@@ -11,6 +12,9 @@ const DetailsPage = () => {
 
   return (
     <div>
+      <Helmet>
+          <title>EstateHospitalityHub | Detail</title>
+      </Helmet>
       <h1 className="text-3xl font-bold text-center">Detail Page</h1>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">

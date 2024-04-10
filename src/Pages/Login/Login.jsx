@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 const Login = () => {
   const { signInUser, signInWithGoogle, signInWithGithub } =
     useContext(AuthContext);
@@ -51,6 +52,9 @@ const Login = () => {
 
   return (
     <div className="flex items-center h-[329px]">
+      <Helmet>
+          <title>EstateHospitalityHub | Login</title>
+      </Helmet>
       <div className="md:w-3/4 lg:w-1/2 mx-auto ">
         <h2 className="text-3xl font-semibold text-center mb-3">Login</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">

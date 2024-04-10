@@ -1,7 +1,12 @@
+import { Helmet } from "react-helmet-async";
+
 const Contact = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>EstateHospitalityHub | Contact</title>
+        </Helmet>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxKsIamdHYXpIFYbQaLxahmR7EGLJjGc0wQ&s"
           alt=""
