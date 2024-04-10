@@ -110,7 +110,7 @@ const Navbar = () => {
               src={user && user.photoURL}
             />
             {user && (
-              <div className="absolute content rounded-xl bg-slate-200 px-6 py-2">
+              <div className="absolute content rounded-xl bg-slate-200 px-4 w-[150px] py-2 z-10">
                 <h1 className="text-lg font-semibold">{user.displayName}</h1>
               </div>
             )}
