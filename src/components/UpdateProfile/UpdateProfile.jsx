@@ -3,6 +3,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { getAuth, updateProfile } from "firebase/auth";
 import app from "../../firebase/firebase.config";
 import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
   const { user } = useContext(AuthContext);
@@ -24,6 +25,9 @@ const UpdateProfile = () => {
   };
   return (
     <div className="my-10">
+      <Helmet>
+        <title>EstateHospitalityHub | UpdateProfile</title>
+      </Helmet>
       <div className="hero-content">
         <div className="card shrink-0 shadow-2xl bg-base-100  w-2/3 mx-auto">
           <form className="card-body" onSubmit={handleSubmit}>

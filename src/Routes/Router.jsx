@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Contact from "../components/Contact/Contact";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import UserProfile from "../components/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/userProfile",
+        element: (
+          <PrivateRoute>
+            <UserProfile></UserProfile>
           </PrivateRoute>
         ),
       },

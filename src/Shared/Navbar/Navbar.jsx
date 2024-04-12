@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52 z-10"
           >
             {navLinks}
           </ul>
@@ -71,34 +71,7 @@ const Navbar = () => {
           </Link>
         )}
 
-        {/* profile */}
-
-        {/* <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar ml-3"
-            >
-              {loading ? (
-                <span className="loading loading-spinner loading-lg"></span>
-              ) : (
-                <div className="w-16 rounded-full">
-                  <img
-                    alt="user"
-                    className="border"
-                    src={user && user.photoURL}
-                  />
-                </div>
-              )}
-            </div>
-
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-            >
-              <h2 className="text-2xl">hello bro</h2>
-            </ul>
-          </div> */}
+        {/* PROFILE */}
 
         {loading ? (
           <span className="loading loading-spinner loading-lg"></span>
