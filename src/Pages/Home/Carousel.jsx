@@ -16,16 +16,32 @@ const Carousel = () => {
   return (
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       <SwiperSlide>
-        <img src={slide1} alt="" className="h-[500px] rounded-xl w-full" />
+        <img
+          src={slide1}
+          alt=""
+          className="lg:h-[500px] h-[300px] lg:rounded-xl w-full"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide2} alt="" className="h-[500px] rounded-xl w-full" />
+        <img
+          src={slide2}
+          alt=""
+          className="lg:h-[500px] h-[300px] lg:rounded-xl w-full"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide3} alt="" className="h-[500px] rounded-xl w-full" />
+        <img
+          src={slide3}
+          alt=""
+          className="lg:h-[500px] h-[300px] lg:rounded-xl w-full"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide4} alt="" className="h-[500px] rounded-xl w-full" />
+        <img
+          src={slide4}
+          alt=""
+          className="lg:h-[500px] h-[300px] lg:rounded-xl w-full"
+        />
       </SwiperSlide>
     </Swiper>
   );

@@ -6,11 +6,11 @@ const UserProfile = () => {
   console.log(user);
 
   return (
-    <div className="border flex rounded-xl w-1/2 mx-auto my-20 p-4">
+    <div className="border flex flex-col lg:flex-row rounded-xl w-3/4 lg:w-1/2 mx-auto my-20 p-4">
       <img
         src={user && user.photoURL}
         alt=""
-        className="w-40  h-40 object-cover rounded-xl mx-auto"
+        className="lg:w-40  h-40 object-cover rounded-xl mx-auto"
       />
       <div className="card-body">
         <h2 className="text-xl font-semibold">

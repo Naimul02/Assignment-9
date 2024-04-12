@@ -13,14 +13,14 @@ const DetailsPage = () => {
   return (
     <div>
       <Helmet>
-          <title>EstateHospitalityHub | Detail</title>
+        <title>EstateHospitalityHub | Detail</title>
       </Helmet>
       <h1 className="text-3xl font-bold text-center">Detail Page</h1>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={card.image}
-            className="max-w-[600px] rounded-lg shadow-2xl lg:h-[480px]"
+            className="max-w-[350px] lg:w-[600px] rounded-lg shadow-2xl lg:h-[480px]"
           />
           <div className="space-y-2">
             <h1 className="text-3xl font-bold">{card.estate_title}</h1>

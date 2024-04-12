@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">
-          EstateHospitalityHub
+          HospitalityHub
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -79,11 +79,11 @@ const Navbar = () => {
           <div className="w-12 h-12 rounded-full relative content-container">
             <img
               alt="user"
-              className="border rounded-full w-full h-full ml-4"
+              className="border rounded-full w-full h-full ml-1"
               src={user && user.photoURL}
             />
             {user && (
-              <div className="absolute content rounded-xl bg-slate-200 px-4 w-[150px] py-2 z-10">
+              <div className="absolute content  rounded-xl bg-slate-200 z-10 -left-24 px-4 w-[150px] py-2">
                 <h1 className="text-lg font-semibold">{user.displayName}</h1>
               </div>
             )}

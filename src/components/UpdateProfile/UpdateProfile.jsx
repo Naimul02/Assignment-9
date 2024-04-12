@@ -26,7 +26,7 @@ const UpdateProfile = () => {
   return (
     <div className="my-10">
       <Helmet>
-        <title>EstateHospitalityHub | UpdateProfile</title>
+        <title>HospitalityHub | UpdateProfile</title>
       </Helmet>
       <div className="hero-content">
         <div className="card shrink-0 shadow-2xl bg-base-100  w-2/3 mx-auto">

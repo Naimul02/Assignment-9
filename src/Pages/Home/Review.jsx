@@ -36,7 +36,7 @@ const Review = () => {
       >
         <SwiperSlide>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <div className="flex flex-col md:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
               <figure>
                 <img
                   src={one}
@@ -46,7 +46,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -87,7 +87,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row  bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row  bg-base-100 shadow-xl rounded-xl border lg:gap-3 p-4">
               <figure>
                 <img
                   src={two}
@@ -97,7 +97,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -138,7 +138,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
               <figure>
                 <img
                   src={three}
@@ -148,7 +148,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -189,7 +189,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
               <figure>
                 <img
                   src={four}
@@ -199,7 +199,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -244,7 +244,7 @@ const Review = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <div className="flex flex-col md:flex-row bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row bg-base-100 shadow-xl rounded-xl border lg:gap-3 p-4">
               <figure>
                 <img
                   src={one}
@@ -254,7 +254,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -295,7 +295,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row  bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row  bg-base-100 shadow-xl rounded-xl border lg:gap-3 p-4">
               <figure>
                 <img
                   src={two}
@@ -305,7 +305,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -346,7 +346,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row  bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row  bg-base-100 shadow-xl rounded-xl border lg:gap-3 p-4">
               <figure>
                 <img
                   src={three}
@@ -356,7 +356,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>
@@ -397,7 +397,7 @@ const Review = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row  bg-base-100 shadow-xl rounded-xl border gap-3 p-4">
+            <div className="flex flex-col lg:flex-row  bg-base-100 shadow-xl rounded-xl border lg:gap-3 p-4">
               <figure>
                 <img
                   src={four}
@@ -407,7 +407,7 @@ const Review = () => {
               </figure>
               <div className="w-[80%]">
                 <h2 className="card-title">Name : Naimul Islum</h2>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-3">
                   <p className="text-lg font-bold">Customer</p>
                   <div className="rating">
                     <span className="text-lg font-semibold">Ratings : </span>

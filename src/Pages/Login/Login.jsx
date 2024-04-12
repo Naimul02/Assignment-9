@@ -53,7 +53,7 @@ const Login = () => {
   return (
     <div className="flex items-center h-[329px]">
       <Helmet>
-          <title>EstateHospitalityHub | Login</title>
+          <title>HospitalityHub | Login</title>
       </Helmet>
       <div className="md:w-3/4 lg:w-1/2 mx-auto ">
         <h2 className="text-3xl font-semibold text-center mb-3">Login</h2>
