@@ -81,7 +81,7 @@ const Login = () => {
                 onClick={handleGoogleSignIn}
               >
                 <FcGoogle className="text-3xl" />
-                SignIn With Google
+                Google
               </button>
             </span>
             <span className="w-[48%] flex items-center gap-2  ml-[4%]">
@@ -90,7 +90,7 @@ const Login = () => {
                 onClick={handleGithubSignIn}
               >
                 <FaGithub className="text-3xl"></FaGithub>
-                SignIn With Github
+                 Github
               </button>
             </span>
           </div>
