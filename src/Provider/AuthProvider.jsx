@@ -19,6 +19,7 @@ const githubProvider = new GithubAuthProvider();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [reload,setReload] = useState(false);
 
   const createUser = (email, password) => {
     setLoading(false)
@@ -45,7 +46,7 @@ const AuthProvider = ({ children }) => {
     return () => {
       unSubscribe();
     };
-  }, []);
+  }, [reload]);
 
   const authInfo = {
     user,
@@ -55,6 +56,7 @@ const AuthProvider = ({ children }) => {
     signInWithGithub,
     logOut,
     loading,
+    setReload
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

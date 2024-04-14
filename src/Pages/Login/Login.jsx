@@ -8,9 +8,9 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
 const Login = () => {
+  
   const { signInUser, signInWithGoogle, signInWithGithub } =
     useContext(AuthContext);
-  // const [error, setError] = useState(null);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
@@ -21,6 +21,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast.success("User login successful");
+        
       })
       .catch((error) => {
         console.error(error.message);
@@ -34,6 +35,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast.success("Login with Google successful");
+        
       })
       .catch((error) => {
         console.error(error);
@@ -44,6 +46,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast.success("Login with Github successful");
+        
       })
       .catch((error) => {
         console.error(error);
@@ -53,7 +56,7 @@ const Login = () => {
   return (
     <div className="flex items-center h-[329px]">
       <Helmet>
-          <title>HospitalityHub | Login</title>
+        <title>HospitalityHub | Login</title>
       </Helmet>
       <div className="md:w-3/4 lg:w-1/2 mx-auto ">
         <h2 className="text-3xl font-semibold text-center mb-3">Login</h2>
@@ -90,7 +93,7 @@ const Login = () => {
                 onClick={handleGithubSignIn}
               >
                 <FaGithub className="text-3xl"></FaGithub>
-                 Github
+                Github
               </button>
             </span>
           </div>

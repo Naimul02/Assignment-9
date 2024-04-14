@@ -9,25 +9,13 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
-import { useNavigate } from "react-router-dom";
 
 const auth = getAuth(app);
 const Register = () => {
-  const { createUser, logOut } = useContext(AuthContext);
+  const { createUser, setReload } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
-  const [logout, setLogout] = useState(false);
 
   const [passwordChecked, setPasswordChecked] = useState(false);
-
-  const navigate = useNavigate();
-  if (logout) {
-    logOut()
-      .then(() => {
-        toast.success("User Created Successful");
-        return navigate("/login");
-      })
-      .catch(() => {});
-  }
 
   const onSubmit = (data) => {
     const name = data.name;
@@ -49,12 +37,14 @@ const Register = () => {
           displayName: name,
           photoURL: photoURL,
         })
-          .then(() => {})
+          .then(() => {
+            setReload(true);
+          })
           .catch((error) => {
             console.error(error);
           });
         console.log(result.user);
-        setLogout(true);
+        toast.success("User created Successful!");
       })
       .catch((error) => {
         toast.error(error.message);
