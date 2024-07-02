@@ -6,6 +6,12 @@
 
 https://assignment-9-261b8.web.app/
 
+## Project Overview
+### This project of mine is made for hospitality.Here people can booking their favourite hotel. After booking  the hotel , they can stay in the hotel.
+
+## Technology
+### react , react-router-dom , firebase , tailwind etc.
+
 ## Project run
 ### npm run dev
 
@@ -18,9 +24,9 @@ https://assignment-9-261b8.web.app/
 
   <li>There is a login button in Navbar,clicking on that login button will take you to the login page and you can login with your email and password</li>
 
-  <li>Moreover ,if you are new to this website, you can go to the register page and create a new user account with your name,photo URL , email ,password.</li>
+  <li>Moreover ,if you are new to this website, you can go to the register page and create a new user account with your name,photo URL , email ,password.Also my website has a page called update profile where user can update his profile another page called user profile where user can view his profile and another page called contact us where user can contact us</li>
 
-  <li>Also my website has a page called update profile where user can update his profile another page called user profile where user can view his profile and another page called contact us where user can contact us</li>
+  
 <ul>
 
 # npm packages
