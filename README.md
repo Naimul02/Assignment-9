@@ -29,8 +29,8 @@ https://assignment-9-261b8.web.app/
   
 <ul>
 
-# npm packages
+## npm packages
 
- <h2>React Hook form</h2>
- <h2>Swiper slider</h2>
- <h2>Animate.css</h2>
+ <h3>React Hook form</h3>
+ <h3>Swiper slider</h3>
+ <h3>Animate.css</h3>
