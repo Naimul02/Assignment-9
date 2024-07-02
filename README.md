@@ -1,12 +1,15 @@
-# Website Name
+## Website Name
 
 <h2>Hospitality Hub</h2>
 
-# Live Website Link
+## Live Website Link
 
 https://assignment-9-261b8.web.app/
 
-# Features and Characteristics
+## Project run
+### npm run dev
+
+## Features and Characteristics
 
 <ul>
   <li>The website has a homepage with a navbar , a banner , number of cards and customer reviews,team members and a footer.</li>
