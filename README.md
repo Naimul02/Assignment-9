@@ -7,7 +7,7 @@
 https://assignment-9-261b8.web.app/
 
 ## Project Overview
-### This project of mine is made for hospitality.Here people can booking their favourite hotel. After booking  the hotel , they can stay in the hotel.
+This project of mine is made for hospitality.Here people can booking their favourite hotel. After booking  the hotel , they can stay in the hotel.
 
 ## Technology
 ### react , react-router-dom , firebase , tailwind etc.
